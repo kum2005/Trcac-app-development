@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+  body {
+    /* overflow: hidden; */
+    background-image: linear-gradient(to bottom, #ffe3bf, #f6eabc, #e7f1bd, #d5f8c5, #bfffd4);
+    height: 100vh; /* Set the height of the body to 100% of the viewport height */
+}
+
+
+
+        /* Basic CSS for header styling */
+        header {
+            background-color: transparent;
+            color: #000000;
+            padding: 15px 20px;
+            /* Increased padding */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            font-size: 40px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 30px;
+            /* Increased margin */
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            padding: 10px;
+            /* Increased padding */
+            transition: background-color 0.3s;
+            /* Smooth transition */
+        }
+
+        /* Hover effect */
+        nav ul li a:hover {
+            border-radius: 20px;
+            color: #ffffff;
+            background-color: #0c0076;
+            /* Darker background on hover */
+        }
+
+ /* Additional CSS for body content */
+    .content-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .left-content {
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .right-content img {
+        border-radius: 20px;
+        width: 850px;
+      /* max-width: 100%; */
+      height: auto;
+    }
+
+    button{
+        padding: 20px;
+        /* height: 50px; */
+        border-radius: 20px;
+        font-size: 40px;
+        background-color: #ffbe4e;
+    }
+    button:hover{
+        color: #ffffff;
+        background-color: #0c0076;
+        padding: 20px;
+        /* height: 50px; */
+        border-radius: 20px;
+        font-size: 40px;
+    }
+        
+h2{
+    font-size: 60px;
+}
+
+p{
+    font-size: 45px;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Logo (replace 'logo.png' with the path to your logo image) -->
+        <div>
+            <img src="Images/Logo.png" alt="Logo" style="height: 150px;"> <!-- Adjust the height as needed -->
+        </div>
+
+        <!-- Navigation Links -->
+        <nav>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Course.html">Courses</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content of your website goes here -->
+
+    <!-- Body Content -->
+    <div class="content-container">
+        <!-- Left Content -->
+        <div class="left-content">
+            <h2>Upgrade Your
+            Skill Now!</h2>
+            <p>Welcome to <b>TRCAC</b>,
+            Where Every Student's Journey Begins.</p>
+            <button onclick="location.href='Register_Login.html'">Register Now</button>
+        </div>
+        <!-- Right Content -->
+        <!-- Right Content -->
+        <div class="right-content">
+            <img id="slideshow-image" src="Images/1.jpg" alt="Slideshow Image">
+        </div>
+        
+        <script>
+            // JavaScript for automatic slideshow
+            var slideIndex = 0;
+            var slides = ["Images/1.jpg", "Images/2.jpg", "Images/3.jpg", "Images/4.jpg", "Images/5.jpg"]; // Add more image URLs as needed
+
+            function showSlide() {
+                var image = document.getElementById("slideshow-image");
+                image.src = slides[slideIndex];
+                slideIndex = (slideIndex + 1) % slides.length; // Cycle through images
+            }
+
+            // Initial call to show the first slide
+            showSlide();
+
+            // Set interval to automatically change slide every 3 seconds
+            setInterval(showSlide, 2000); // Change slide every 3 seconds (3000 milliseconds)
+        </script>
+    </div>
+
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration and Login Form</title>
+    <link rel="stylesheet" href="Register_Login.css">
+</head>
+
+<body>
+    <!-- TRCAC Student Registration Form -->
+    <h1>TRCAC Student Form</h1>
+
+    <div class="form-container" id="registration-container">
+        <!-- <h2>Registration Form</h2> -->
+        <form id="registration-form">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="class">Class:</label>
+                    <input type="text" id="class" name="class" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="nationality">Nationality:</label>
+                    <input type="text" id="nationality" name="nationality" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-number">Contact Number:</label>
+                    <input type="tel" id="contact-number" name="contact-number" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+            </fieldset>
+            <div class="form-buttons">
+                <input type="submit" value="Register">
+                <button type="button" onclick="location.href='Index.html'">Back</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="form-container" id="login-container" style="display: none;">
+        <!-- TRCAC Student Login Form -->
+        <h1>TRCAC Student Login Form</h1>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="login-email">Email Address:</label>
+                <input type="email" id="login-email" name="login-email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required>
+            </div>
+            <div class="form-buttons">
+                <input type="submit" value="Login">
+                <button type="button" onclick="toggleForms()">Back</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="Register_Login.js"></script>
+</body>
+
+</html>

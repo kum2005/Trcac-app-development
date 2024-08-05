@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        background-color: #705959;
+    }
+
+    .bgimg {
+        background-image: url('Images/imgbg.png');
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        color: rgb(0, 0, 0);
+        font-family: "Courier New", Courier, monospace;
+        font-size: 25px;
+    }
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 16px;
+    }
+
+    .bottomleft {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+    }
+
+    .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    hr {
+        margin: auto;
+        width: 40%;
+    }
+
+
+    
+.buttons {
+    margin: 30px;
+    margin-left: 800px;
+}
+
+.button {
+    /* margin-bottom: 80px; */
+    padding: 10px 20px;
+    margin: 0 70px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+
+<body>
+
+    <div class="bgimg">
+        <div class="topleft">
+            <!-- <p>Logo</p> -->
+            <img src="Images/Logo.png" width="100px" alt="logo">
+        </div>
+        <div class="middle">
+            <h1>COMING SOON</h1>
+            <hr>
+            <p><b>Happy Learning</b> </p>
+        </div>
+        <div class="bottomleft">
+            <p><b>TRCAC</b></p>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="button" onclick="window.location.href='Welcome.html'">Back</button>
+        <!-- <button class="button" onclick="window.location.href='next.html'">Next</button> -->
+    </div>
+
+
+</body>
+
+</html>

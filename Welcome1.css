@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 140px;
+    /* Adjust the gap between the icons */
+    justify-items: center;
+    align-items: center;
+}
+
+.icon {
+    text-align: center;
+    cursor: pointer;
+    padding: 50px;
+    /* Optional: Add padding for better spacing */
+    background-color: #fff;
+    /* Optional: Add background color */
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow for better visibility */
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Smooth transition for hover effects */
+}
+
+.icon img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 10px;
+    /* Gap between the image and the text */
+}
+
+.icon p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.icon:hover {
+    transform: translateY(-10px);
+    /* Lift the card up on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Intensify the shadow on hover */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
